@@ -1,0 +1,257 @@
+.robot{
+    border: 1px solid black;
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    left: 0px;
+}
+.head{
+    width: 100px;
+    height: 80px;
+    background-color: green;
+    border-radius: 50px 50px 0px 0px;
+    position: absolute;
+    margin-left: 50px;
+}
+.eye1{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color:white;
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.eye2{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+.body{
+    width: 100px;
+    height:120px;
+    background-color: green;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 90px;
+    border-radius: 0px 0px 25px 25px;
+    overflow: hidden;
+}
+.leg1{
+    width: 25px;
+    height:100px;
+    background-color:green;
+    position: absolute;
+    border-radius: 0px 0px 50px 50px;
+    z-index: -1;
+    margin-left: 65px;
+    margin-top: 150px;
+
+}
+.leg2{
+    width: 25px;
+    height:100px;
+    background-color:green;
+    position: absolute;
+    border-radius: 0px 0px 50px 50px;
+    margin-left: 113px;
+    z-index: -1;
+    margin-top: 150px;
+
+}
+.hand1{
+    width: 25px;
+    height:70px;
+    background-color: green;
+    position: absolute;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+.hand2{
+    width: 25px;
+    height:70px;
+    background-color: green;
+    position: absolute;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 155px;
+    margin-top: 100px;
+}
+
+.robot:hover .head{
+    transform:rotate(180deg);
+    animation: head 5s infinite;
+}
+.robot:hover .hand1{
+    animation: hand1 2s infinite;
+}
+.robot:hover .hand2{
+   
+    animation: hand2 2s infinite;
+}
+.robot:hover .leg1{
+    animation: leg1 2s infinite;
+
+}
+.robot:hover .leg2{
+    animation: leg2 2s infinite;
+
+}
+@keyframes head {
+    0%{
+        background-color: red;
+        /* transform: rotate(0deg); */
+        /* transform-origin: top; */
+        transform: rotate3d(60deg);
+
+    }
+    25%{
+        background-color:rgb(248, 225, 17);
+        /* transform: rotate(70deg); */
+        transform-origin: top;
+
+        
+    }
+    50%{
+        background-color: rgb(19, 77, 200);
+        
+        transform-origin: top;
+    }
+    75%{
+        background-color: aqua;
+    }
+    100%{
+        background-color: black;
+    }
+}
+@keyframes hand2 {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+
+    }
+    25%{
+        transform: rotate(40deg);
+        transform-origin: top;
+        
+    }
+    40%{
+        transform: rotate(70deg);
+        transform-origin: top;
+    }
+    60%{
+        transform: rotate(90deg);
+        transform-origin: top;
+    }
+
+    70%{
+        transform: rotate(-170deg);
+        transform-origin: top;
+    }
+    100%{
+        transform: rotate(-180deg);
+        transform-origin: top;
+
+    }
+}
+@keyframes hand1 {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+
+    }
+    25%{
+        transform: rotate(40deg);
+        transform-origin: top;
+        
+    }
+    40%{
+        transform: rotate(70deg);
+        transform-origin: top;
+    }
+    60%{
+        transform: rotate(90deg);
+        transform-origin: top;
+    }
+
+    70%{
+        transform: rotate(-170deg);
+        transform-origin: top;
+    }
+    100%{
+        transform: rotate(-180deg);
+        transform-origin: top;
+
+    }
+    
+}  
+
+/*  */
+@keyframes leg1 {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+
+    }
+    25%{
+        transform: rotate(40deg);
+        transform-origin: top;
+        
+    }
+    40%{
+        transform: rotate(-40deg);
+        transform-origin: top;
+    }
+    60%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    }
+
+    70%{
+        transform: rotate(40deg);
+        transform-origin: top;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top;
+
+    }
+    
+}  
+@keyframes leg2 {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top;
+
+    }
+    25%{
+        transform: rotate(40deg);
+        transform-origin: top;
+        
+    }
+    40%{
+        transform: rotate(-40deg);
+        transform-origin: top;
+    }
+      60%{
+        transform: rotate(0deg);
+        transform-origin: top;
+    } 
+
+    70%{
+        transform: rotate(-40deg);
+        transform-origin: top;
+    } 
+    100%{
+        transform: rotate(0deg);
+        
+
+    }
+    
+}          
+   
+   
